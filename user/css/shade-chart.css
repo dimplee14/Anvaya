@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+.shadechart-material-bestfor {
+    font-size: 0.97rem;
+    color: #222;
+    text-align: center;
+    margin: 8px 0 0 0;
+    line-height: 1.5;
+    background: #f8f8f8;
+    border-radius: 8px;
+    padding: 7px 6px 6px 6px;
+    box-shadow: 0 1px 4px #0001;
+    font-weight: 500;
+}
+a {
+  color: inherit;
+  /* use the same color as parent text */
+  text-decoration: none;
+  /* remove underline */
+}
+.shadechart-color-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 16px auto;
+    display: block;
+    box-shadow: 0 2px 8px #0001;
+    border: 2.5px solid #fff;
+}
+.shadechart-card-number {
+    color: #FA0608;
+    font-weight: 700;
+    margin-right: 6px;
+    font-size: 1.1em;
+}
+/* Categories heading above the grid */
+.shadechart-categories-section {
+    width: 100%;
+    margin: 32px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.shadechart-categories-heading {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #FA0608;
+    margin-bottom: 18px;
+    margin-left: 8px;
+    letter-spacing: 0.5px;
+}
+.shadechart-list {
+    list-style: disc inside;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 8px;
+    text-align: left;
+}
+.shadechart-list li {
+    margin-bottom: 4px;
+    font-size: 0.98rem;
+    color: #484848;
+    line-height: 1.5;
+}
+.shadechart-shades, .shadechart-symbolism, .shadechart-best-for {
+    font-size: 0.97rem;
+    color: #484848;
+    text-align: center;
+    margin-bottom: 2px;
+    line-height: 1.5;
+}
+.shadechart-fabric-img {
+    width: 100%;
+    max-width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    margin: 0 auto 12px auto;
+    display: block;
+    box-shadow: 0 2px 8px #0001;
+    background: #fff;
+}
+.shadechart-card-content {
+    padding: 8px 4px 4px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+.shadechart-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+    color: #FA0608;
+    letter-spacing: 0.5px;
+}
+.shadechart-material-guide, .shadechart-best-for {
+    font-size: 0.98rem;
+    color: #484848;
+    text-align: center;
+    margin-bottom: 2px;
+}
+/* Main container and section spacing for shade chart page */
+main {
+    padding: clamp(40px, 8vw, 100px) clamp(16px, 8vw, 80px);
+    margin: 0 auto;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shadechart-Studio {
+    margin-bottom: 32px;
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Shade Chart Category Filter Buttons */
+.shadechart-btns-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 28px 0;
+    padding: 10px 0;
+}
+.shadechart-btns {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.shadechart-btns-box {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 8px 12px;
+}
+/* Red theme for filter buttons */
+.shadechart-filter-btn {
+    padding: 12px 32px;
+    border-radius: 18px;
+    border: 2px solid #FA0608;
+    background: #fff;
+    color: #FA0608;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s, border 0.18s;
+    box-shadow: 0 1px 4px #0001;
+    outline: none;
+    margin: 2px 0;
+}
+.shadechart-filter-btn.active,
+.shadechart-filter-btn:hover {
+    background: #FA0608;
+    color: #fff;
+    border-color: #FA0608;
+}
+@media (max-width: 600px) {
+    .shadechart-btns-box { gap: 8px; }
+    .shadechart-filter-btn { padding: 8px 14px; font-size: 0.95rem; }
+}
+/* Shade Chart Grid and Card Styles */
+.shadechart-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+.shadechart-card {
+    flex: 1 1 calc(20% - 18px);
+    min-width: 160px;
+    max-width: 220px;
+    padding: 22px 10px;
+    text-align: center;
+    color: #222;
+    background: linear-gradient(135deg, #fff 70%, #f7f7fa 100%);
+    border-radius: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 18px #0002, 0 1.5px 4px #fa06081a;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    position: relative;
+    border: 1.5px solid #fa06081a;
+}
+.shadechart-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 24px #0002;
+}
+@media (max-width: 900px) {
+    .shadechart-card { flex: 1 1 calc(33% - 18px); }
+}
+@media (max-width: 600px) {
+    .shadechart-card { flex: 1 1 100%; min-width: 120px; }
+    .shadechart-grid { gap: 10px; }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

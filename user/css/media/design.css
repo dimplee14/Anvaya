@@ -1,0 +1,419 @@
+@media(max-width:1600px) {
+
+    th,
+    td {
+        /* padding: clamp(6px, 1vw, 16px) clamp(10px, 2vw, 25px); */
+        font-size: 22px;
+        font-weight: 300;
+    }
+
+    tr:first-child th,
+    td:first-child {
+        font-size: 22px;
+        font-weight: 600;
+
+    }
+}
+
+@media(max-width:1450px) {
+
+    th,
+    td {
+        /* padding: clamp(3px, 1vw, 12px) clamp(8px, 2vw, 20px); */
+        font-size: 20px;
+    }
+
+    tr:first-child th,
+    td:first-child {
+        font-size: 20px;
+        font-weight: 500;
+
+    }
+}
+
+@media(max-width:1300px) {
+
+    th,
+    td {
+        /* padding: clamp(2px, 1vw, 10px) clamp(6px, 2vw, 16px); */
+        font-size: 18px;
+    }
+
+    tr:first-child th,
+    td:first-child {
+        font-size: 18px;
+        font-weight: 500;
+
+    }
+}
+
+@media(max-width:1200px) {
+
+    th,
+    td {
+        /* padding: clamp(1px, 1vw, 8px) clamp(4px, 2vw, 12px); */
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1100px) {
+    .size-color-box {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .size-color-box>div {
+        width: 90vw;
+    }
+
+    th,
+    td {
+        /* padding: clamp(10px, 1vw, 25px) clamp(20px, 2vw, 40px); */
+        font-size: 24px;
+    }
+
+    .color-wheel {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    tr:first-child th,
+    td:first-child {
+        font-size: 24px;
+        font-weight: 600;
+
+    }
+}
+
+@media (max-width:768px) {
+
+    .tell-us-main {
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .tell-us-main>div {
+        flex: 1;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .drop-down-list-group {
+        width: 100%;
+    }
+
+    .gr {
+        width: 90vw;
+        justify-self: center;
+    }
+
+    tr:first-child th,
+    td:first-child {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 50px;
+
+
+    }
+
+    .file-upload {
+        width: 90vw;
+        justify-self: center;
+        position: relative;
+        align-self: center;
+
+    }
+
+    .file-label {
+        width: 90vw;
+        justify-self: center;
+        position: relative;
+        object-fit: cover;
+        align-self: center;
+        right: 0px;
+    }
+
+    .design-studio {
+        padding: 0px;
+    }
+
+    .heading-budget-box {
+        padding: 30px;
+        /* width:90vw; */
+    }
+
+    .que {
+        font-size: 20px;
+    }
+
+    .que>span {
+        font-size: 16px;
+        display: block;
+    }
+
+    .light-heading {
+        font-size: 20px;
+    }
+
+    .dropdown {
+        font-size: 18px;
+        height: 50px;
+        padding: 0px;
+    }
+
+    .head {
+        font-size: 30px;
+    }
+
+    .underline {
+        gap: 6px;
+    }
+
+    .underline1 {
+        width: 80px;
+    }
+
+    .underline2 {
+        width: 26px;
+    }
+
+    .p {
+        font-size: 20px;
+    }
+
+    .design {
+        gap: 30px;
+    }
+
+    .que {
+        font-size: 20px;
+    }
+
+    .que1-box,
+    .que2-box {
+        gap: 30px;
+    }
+
+    .que1-box>div,
+    .que2-box>div {
+        flex: 1;
+        width: 45vw;
+    }
+
+    .que1-box,
+    .que2-box {
+
+        padding: 20px;
+    }
+
+    .design-form {
+        gap: 50px;
+    }
+
+    .tell-us-main {
+        padding: 30px;
+        margin: 0px;
+
+    }
+
+    .light-head {
+        font-size: 18px;
+
+    }
+
+    .tell-file {
+        gap: 10px;
+    }
+
+    .gr {
+        font-size: 18px;
+        height: 50px;
+    }
+    .agree>label{
+        font-size: 18px;
+        line-height: 10px;
+    }
+
+}
+
+@media(max-width:700px) {
+
+    th,
+    td {
+        padding: clamp(6px, 1vw, 16px) clamp(15px, 2vw, 30px);
+        font-size: 20px;
+    }
+
+    .size-chart-table>table {
+
+
+        table-layout: fixed;
+        overflow: scroll;
+
+
+    }
+
+    table {
+        overflow-x: hidden;
+    }
+
+    tr:first-child th,
+    td:first-child {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 50px;
+
+
+    }
+}
+
+@media(max-width:600px) {
+
+    tr:first-child th,
+    td:first-child {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+
+
+    }
+
+}
+
+@media(max-width:500px) {
+
+    th,
+    td {
+        padding: 0px;
+        font-size: 16px;
+        font-weight: 200;
+    }
+
+    tr:first-child th,
+    td:first-child {
+        font-size: 16px;
+        font-weight: 400;
+
+    }
+}
+
+@media (max-width:390px) {
+    .que1-box {
+        flex-direction: column;
+        flex: 1;
+        width: 90vw;
+
+    }
+
+    .que2-box {
+        flex-direction: column-reverse;
+        flex: 1;
+        width: 90vw;
+    }
+
+    .que1-box>div,
+    .que2-box>div {
+        flex: 1;
+        width: 90vw;
+    }
+
+    .que1-img,
+    .que2-img {
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .design-form {
+        flex: 1;
+        width: 90vw;
+    }
+
+    .heading-budget-box {
+        padding: 20px;
+        flex-direction: column;
+        gap: 30px;
+
+    }
+
+    .heading-budget-box>div {
+        flex: 1;
+        width: 90vw;
+    }
+
+    .selection-heading {
+        flex-direction: row;
+    }
+    .dropdown{
+        width:90vw;
+        height: 50px;
+        font-size: 18px;
+        flex: 1;
+    }
+    .light-heading{
+        align-self: flex-end;
+        justify-self: flex-end;
+    }
+    .file-label{
+       text-align: center;
+    }
+}
+
+@media (max-width: 860px) {
+    .saree-img-group {
+        gap: clamp(5px, 3vw, 10px);
+        overflow: hidden;
+    }
+
+    .crousel-track {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .card {
+        flex: 0 0 260px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 350px;
+    }
+
+    .crousel-dots {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .crousel-dots button {
+        height: 10px;
+        width: 10px;
+        margin: 0 5px;
+        background-color: #aaa;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .crousel-dots button.active {
+        background-color: #333;
+    }
+
+    .saree-img1 {
+        margin-left: 2%;
+    }
+
+    .saree-img5 {
+        margin-right: 2%;
+    }
+}

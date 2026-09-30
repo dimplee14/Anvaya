@@ -1,0 +1,15 @@
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .signup-section {
+        width: 90%;
+    }
+    
+    .line-1 {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .line-1 .input-group {
+        width: 100%;
+    }
+}

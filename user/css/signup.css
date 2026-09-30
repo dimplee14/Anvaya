@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+
+:root {
+    --black-font: #484848;
+    --red-font: #FA0608;
+    --light-gray: rgba(72, 72, 72, 0.1);
+    --medium-gray: rgba(72, 72, 72, 0.5);
+    --dark-gray: rgba(72, 72, 72, 0.8);
+    --white: #ffffff;
+    --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+a {
+  color: inherit;
+  /* use the same color as parent text */
+  text-decoration: none;
+  /* remove underline */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: clamp(50px, 10vw, 100px);
+    margin-bottom: clamp(50px, 10vw, 100px);
+}
+
+/* Hero Section */
+.signup-hero {
+    width: clamp(90%, 80%, 1200px);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.signup-heading h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700;
+    font-size: clamp(30px, 5vw, 50px);
+}
+
+.black-head {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700;
+    font-size: clamp(30px, 5vw, 50px);
+    color: var(--black-font);
+}
+
+.head span {
+    color: var(--red-font);
+}
+
+.underline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0 20px 0;
+}
+
+.underline1 {
+    width: 30px;
+    height: 1px;
+    background-color: var(--black-font);
+}
+
+.underline2 {
+    width: 50px;
+    height: 1px;
+    background-color: var(--black-font);
+}
+
+.black-p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: clamp(14px, 2vw, 18px);
+    color: var(--black-font);
+    opacity: 0.8;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Signup Section */
+.signup-section {
+    width: clamp(300px, 90%, 600px);
+    margin: 0 auto;
+}
+
+.signup-container {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    padding: clamp(20px, 5vw, 40px);
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.line-1 {
+    display: flex;
+    gap: 20px;
+}
+
+.line-1 .input-group {
+    width: 50%;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid var(--medium-gray);
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: var(--black-font);
+    transition: var(--transition);
+}
+
+.input-group input:focus {
+    outline: none;
+    border-bottom: 1px solid var(--red-font);
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: var(--medium-gray);
+    pointer-events: none;
+    transition: var(--transition);
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: var(--red-font);
+}
+
+.terms-privacy {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: var(--black-font);
+}
+
+.terms-privacy input {
+    margin-top: 3px;
+}
+
+.terms-privacy a {
+    color: var(--red-font);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.terms-privacy a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.btn input {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--red-font);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn input:hover {
+    background-color: #d10507;
+}
+
+.login-link {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: var(--red-font);
+    text-decoration: none;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .line-1 {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .line-1 .input-group {
+        width: 100%;
+    }
+}
+
+/* Home Button */
+.home-btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.home-btn .btn-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--black-font);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.home-btn .btn-link:hover {
+    background-color: var(--red-font);
+}

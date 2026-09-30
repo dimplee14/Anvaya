@@ -1,0 +1,289 @@
+@media (max-width: 1700px) {
+    .reviews {
+        width: clamp(500px, 50vw, 900px);
+    }
+}
+
+@media (max-width: 1600px) {
+    .reviews {
+        width: clamp(500px, 50vw, 900px);
+    }
+}
+
+
+@media (max-width: 1500px) {
+    .img-review {
+        gap: clamp(30px, 2vw, 60px);
+    }
+
+    .reviews {
+        width: clamp(500px, 50vw, 850px);
+    }
+
+    .imgs,
+    .imgs2 {
+        gap: clamp(10px, 2vw, 15px);
+    }
+    .image{
+        top: 40%;
+    }
+
+}
+
+
+@media (max-width:1300px) {
+    .image {
+        width: 35%;
+        height: 25%;
+        position: absolute;
+        right: 80px;
+        top: 40%;
+    }
+}
+
+@media (max-width:1000px) {
+    .workshop-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        border-radius: 5px;
+        padding-bottom: 150px;
+        gap: 100px;
+
+
+    }
+
+    .reviews {
+        width: clamp(350px, 50vw, 500px);
+    }
+
+    .review {
+        gap: clamp(15px, 2vw, 20px);
+    }
+
+    .image {
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        right: 0px;
+        left: 50%;
+        top: 65%;
+        transform: translateX(-50%);
+        border-radius: 5px;
+
+
+    }
+
+    .workshop-texts {
+        flex: 1;
+        width: 100%;
+        height: auto;
+    }
+
+    .team-white {
+        padding-top: 150px;
+
+    }
+
+
+}
+
+@media (max-width: 860px) {
+    .reviews {
+        width: clamp(200px, 50vw, 350px);
+    }
+
+    .imgs,
+    .imgs2 {
+        gap: clamp(7px, 2vw, 10px);
+    }
+
+    .p {
+        font-size: 20px;
+    }
+
+    .head {
+        font-size: 30px;
+    }
+
+    .underline1 {
+        width: 80.26px;
+    }
+
+    .underline2 {
+        width: 26.26px;
+    }
+
+    .workshop-text {
+        font-size: 20px;
+        line-height: auto;
+    }
+
+    .team-p {
+        font-size: 20px;
+        line-height: auto;
+        text-align: center;
+    }
+
+    .craftmanship-head {
+        font-size: 22px;
+    }
+
+    .para-text {
+        font-size: 20px;
+    }
+
+    .team-white,
+    .craftmanship {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .team-p {
+        font-size: 20px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .img-review {
+        gap: clamp(10px, 4vw, 20px);
+    }
+
+    .review {
+        padding: clamp(15px, 4vw, 25px) clamp(30px, 4vw, 40px);
+    }
+
+    .craftmanship {
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .para-text {
+        text-align: center;
+    }
+
+    .story,
+    .our-process {
+        gap: 30px;
+    }
+
+    .explor-btn>button {
+        width: 200px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .workshop-text {
+        font-size: 20px;
+        line-height: auto;
+    }
+
+    main,
+    .workshop-black,
+    .team-white {
+        padding: 2% 4%;
+    }
+
+    .our-process {
+        width: 100vw;
+        padding: 2% 5%;
+    }
+
+    .team-white {
+        padding-top: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-p {
+        font-size: 20px;
+        line-height: auto;
+        text-align: center;
+    }
+
+    .image {
+        height: 250px;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .img-review {
+        flex-wrap: wrap-reverse;
+    }
+
+    .review {
+        padding: 0px;
+    }
+
+    .sapration-lines {
+        justify-content: center;
+    }
+
+    .reviews {
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        flex: 1;
+    }
+
+    .story-content>div {
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .text {
+        width: 100%;
+
+    }
+
+    .que1-img {
+        width: 90vw;
+        height: 350px;
+    }
+
+    .craftmanship-head {
+        font-size: 22px;
+    }
+
+    .para-text {
+        font-size: 20px;
+    }
+
+    .image {
+        height: 200px;
+        top: 75%;
+    }
+
+    .team-p {
+        font-size: 20px;
+
+    }
+}
+
+@media (max-width:500px) {
+    .workshop-black{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .workshop-heading{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width:400px) {
+    main {
+        padding: 0px;
+    }
+
+}
